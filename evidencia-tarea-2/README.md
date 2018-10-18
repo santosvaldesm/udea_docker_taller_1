@@ -9,12 +9,12 @@ el proyecto se encuentra en la carpeta paises_app<br/>
 ![N|Solid](https://raw.githubusercontent.com/santosvaldesm/udea_docker_taller_1/master/evidencia-tarea-2/Captura.PNG)
 
 # Creación de imagen de mysql
-sudo docker run --name demo-mysql -p 3306:3306 \<br/>
-         -v /home/usuario/db:/var/lib/mysql \<br/>
-		 -e MYSQL_ROOT_PASSWORD=1234 \<br/>
-		 -e MYSQL_DATABASE=paises_db \<br/>
-		 -e MYSQL_USER=santos \<br/>
-		 -e MYSQL_PASSWORD=1234 \<br/>
+sudo docker run --name demo-mysql -p 3306:3306 &#92;<br/>
+         -v /home/usuario/db:/var/lib/mysql &#92;<br/>
+		 -e MYSQL_ROOT_PASSWORD=1234 &#92;<br/>
+		 -e MYSQL_DATABASE=paises_db &#92;<br/>
+		 -e MYSQL_USER=santos &#92;<br/>
+		 -e MYSQL_PASSWORD=1234 &#92;<br/>
          -e MYSQL_ROOT_PASSWORD=1234 -d mysql<br/>
 # Conectándose a la base de datos		 
 mysql --host=127.0.0.1 --port 3306 -u root -p<br/>	
