@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+</head>
+<body>
+<div class="container">
+  <table class="table">
+    <thead>
+    <tr>
+      <th>Codigo</th>      
+      <th>Pais</th>      
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="pais, status : ${listaPaises}">
+      <td th:text="${pais.codigo}"></td>
+      <td th:text="${pais.nombre}"></td>            
+    </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
